@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js
+"></script>
+    <script
+      src="https://kit.fontawesome.com/2bfcecb782.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="alert alert-danger custom-alert" role="alert">
+      A simple danger alert—check it out!
+    </div>
+    <div class="container">
+      <div class="box">
+        <div class="rotate-btn">
+          <button class="rotate"><i class="fa-solid fa-rotate"></i></button>
+        </div>
+        <div class="image-wrapper">
+          <img class="image1" src="./profile-picture.avif" alt="profile-pic" />
+        </div>
+        <div class="content-wrapper">
+          <p class="fs-5">First name <span class="f-name fs-5"></span></p>
+          <p class="fs-5">Last name <span class="s-name fs-5"></span></p>
+          <p class="fs-5">
+            <i class="fa-solid fa-map-pin fs-5"></i>
+            Office location <span class="office-location"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container1">
+      <div class="box1">
+        <div class="image-wrapper">
+          <img class="image" src="./profile-picture.avif" alt="profile-pic" />
+        </div>
+        <div class="content-wrapper">
+          <input
+            type="text"
+            placeholder="Enter your first name"
+            class="first-name-input form-control"
+          />
+          <input
+            type="text"
+            placeholder="Enter your last name"
+            class="second-name-input form-control"
+          />
+          <p class="pin_para">
+            <i class="fa-solid fa-map-pin"></i>
+            <input
+              type="text"
+              placeholder="Enter your office"
+              class="office-location-input form-control"
+            />
+          </p>
+        </div>
+        <div class="buttons">
+          <button class="cancel-btn btn btn-danger">Cancel</button>
+          <button class="save-btn btn btn-success">Save</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

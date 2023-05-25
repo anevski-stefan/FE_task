@@ -1,0 +1,101 @@
+html {
+    font-family: 'Eczar', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    justify-content: center;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.image-wrapper img{
+    width: 100%;
+    display: flex;
+} 
+
+
+.content-wrapper {
+    text-align: center;
+}
+
+.rotate-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.rotate-btn button {
+    border: none;
+}
+
+.box{ 
+    border: 1px solid black;
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.box1{ 
+    border: 1px solid black;
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 2;
+}
+
+
+.pin_para {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    padding: 5px 10px;
+}
+
+.content-wrapper input {
+    width: 190px;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    justify-content: center;
+}
+
+.image {
+    margin-bottom: 10px;
+}
+
+.custom-alert{ 
+    width: 60%;
+    margin: 0 auto;
+}
+
+.content-wrapper span {
+    text-decoration: underline;
+}
