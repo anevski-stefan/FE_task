@@ -24,6 +24,7 @@ html {
 .image-wrapper img{
     width: 100%;
     display: flex;
+    margin-bottom: 20px;
 } 
 
 
@@ -43,9 +44,10 @@ html {
 
 .box{ 
     border: 1px solid black;
-    width: 20%;
+    width: 30%;
     padding: 10px;
     border-radius: 10px;
+    max-height: 90vh;
 }
 
 .box1{ 
@@ -99,3 +101,19 @@ html {
 .content-wrapper span {
     text-decoration: underline;
 }
+
+.reverse-animation {
+    animation-name: reverseRotate;
+    animation-duration: 1s; /* Adjust the duration as needed */
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes reverseRotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }

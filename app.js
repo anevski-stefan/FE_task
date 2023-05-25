@@ -16,6 +16,8 @@ let customAlert = document.querySelector(".custom-alert");
 
 container1.style.display = "none";
 customAlert.style.display="none";
+image1.src = localStorage.getItem("imagesource")
+
 
 
 function handleFileSelect(event) {
@@ -48,6 +50,14 @@ rotate.addEventListener("click", function(){
 
    container1.style.display="flex";
     container.style.display = "none";
+
+    container1.classList.add("reverse-animation");
+
+    
+    setTimeout(function() {
+        
+        container1.classList.remove("reverse-animation");
+    }, 1000); 
 })
 
 image.addEventListener("click", function() {
@@ -66,6 +76,7 @@ save_btn.addEventListener("click", function(){
     localStorage.setItem("firstname", first_name_input.value);
     localStorage.setItem("lastname", second_name_input.value);
     localStorage.setItem("officelocation", office_location_input.value);
+    image1.src = localStorage.getItem("imagesource")
 
     if(first_name_input.value.length == 0 || second_name_input.value.length == 0 || office_location_input.value.length == 0){
         customAlert.style.display="block";
@@ -77,6 +88,14 @@ save_btn.addEventListener("click", function(){
         container.style.display = "flex";
         container1.style.display = "none";
         customAlert.style.display="none";
+
+        container.classList.add("reverse-animation");
+
+    
+    setTimeout(function() {
+        
+        container.classList.remove("reverse-animation");
+    }, 1000); 
     }
 })
 
